@@ -1,0 +1,11 @@
+.loader{position:fixed;inset:0;z-index:300;pointer-events:none}.ld-a,.ld-b{position:absolute;left:0;right:0;height:50.2%;background:var(--wine2);transition:transform 1.1s cubic-bezier(.77,0,.18,1)}.ld-a{top:0}.ld-b{bottom:0}
+.loader.done .ld-a{transform:translateY(-101%)}.loader.done .ld-b{transform:translateY(101%)}
+.ld-in{position:absolute;inset:0;display:grid;place-content:center;justify-items:center;gap:20px;color:#f3ecdf;transition:opacity .5s}.loader.done .ld-in{opacity:0}
+.clock{width:min(34vw,150px);stroke:#f3ecdf;fill:none;stroke-width:1.5}.clock line{stroke-linecap:round;transform-origin:50px 50px}.pct{font:300 clamp(4rem,12vw,9rem)/1 var(--serif);font-variant-numeric:tabular-nums}.ld-in span{letter-spacing:.5em;font-size:.72rem;text-transform:uppercase;opacity:.6}
+.wipe{position:fixed;inset:0;z-index:250;pointer-events:none;background:var(--wine);transform:scaleY(0);transform-origin:top;transition:transform .8s cubic-bezier(.77,0,.18,1)}.wipe.cover{transform:scaleY(1)}.wipe.leave{transform-origin:bottom;transform:scaleY(1)}
+[data-reveal]{opacity:0;transform:translateY(40px);transition:opacity 1s,transform 1s var(--e);transition-delay:var(--d,0s)}[data-reveal].in{opacity:1;transform:none}
+.w{display:inline-block;overflow:hidden;vertical-align:top;padding:0 .04em .14em 0}.ch{display:inline-block;transform:translateY(110%) rotate(7deg);transition:transform 1.1s var(--e);transition-delay:calc(var(--i)*.03s + var(--d,0s))}.in .ch{transform:none}.ch.dot{color:var(--orange)}
+.mask{clip-path:inset(0 0 100% 0);transition:clip-path 1.3s var(--e)}.mask.in{clip-path:inset(0)}
+.float{animation:fl 9s ease-in-out infinite}.f2{animation-duration:11s;animation-delay:-3s}.f3{animation-duration:14s}.f4{animation-duration:7s}
+.flash.go{animation:fh 1.1s ease}.ck.go line:first-of-type{animation:ti 1.4s var(--e) both}
+@keyframes fl{50%{translate:0 -26px}}@keyframes spin{to{transform:rotate(360deg)}}@keyframes mq{to{transform:translateX(-50%)}}@keyframes fh{40%{opacity:.35}}@keyframes ti{from{transform:rotate(-200deg)}}

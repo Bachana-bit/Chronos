@@ -1,0 +1,29 @@
+<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#f3ecdf">
+<title>CHRONOS — The Collection</title><meta name="description" content="CHRONOS, the art of time: an experimental digital art museum.">
+<link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Hanken+Grotesk:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/animations.css"><link rel="stylesheet" href="css/responsive.css">
+<noscript><style>[data-reveal]{opacity:1!important;transform:none!important}.ch{transform:none!important}.mask{clip-path:none!important}.loader,.wipe{display:none}</style></noscript></head>
+<body data-page="collection">
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><filter id="warp"><feTurbulence type="fractalNoise" baseFrequency=".012 .02" numOctaves="2" seed="3" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="0" xChannelSelector="R" yChannelSelector="G"/></filter></svg>
+<div class="loader" aria-hidden="true"><div class="ld-a"></div><div class="ld-b"></div><div class="ld-in"><svg class="clock" viewBox="0 0 100 100"><circle cx="50" cy="50" r="46"/><line class="hm" x1="50" y1="50" x2="50" y2="14"/><line class="hh" x1="50" y1="50" x2="50" y2="28"/></svg><b class="pct">000</b><span>Chronos</span></div></div>
+<i class="wipe cover"></i><canvas class="dust" aria-hidden="true"></canvas><div class="spot"></div><div class="follow" data-follow></div><div class="cd"></div><div class="cr"><span></span></div>
+<header class="bar"><a class="logo" href="index.html" data-cursor="Home">Chronos</a><time class="live" id="live">00:00:00</time><button class="mbtn" aria-expanded="false" aria-controls="menu"><span>Menu</span><i data-lucide="menu"></i></button></header>
+<nav class="menu" id="menu" aria-label="Main navigation" inert><a href="index.html"><span style="--i:0">Home<small>The museum of time</small></span></a><a href="collection.html" class="on"><span style="--i:1">The Collection<small>Ten works on duration</small></span></a><a href="dimensions.html"><span style="--i:2">The Dimensions<small>Beyond length and depth</small></span></a><a href="archive.html"><span style="--i:3">The Archive<small>A century, unwound</small></span></a><a href="experience.html"><span style="--i:4">The Experience<small>Play with time</small></span></a><a href="contact.html"><span style="--i:5">Contact<small>Visit, write, collaborate</small></span></a></nav>
+<main id="main">
+<section class="hero short"><p class="kick" data-reveal>Ten works on duration</p><h1 class="mega"><span data-split="chars">The</span><span data-split="chars" class="acc">collection.</span></h1><p class="lead" data-reveal style="--d:.5s">Sculpture, light, painting and code, gathered around a single obsession. Filter the works, hover to disturb them, open one to look closer.</p>
+<div class="chips" id="filters" role="group" aria-label="Filter artworks" style="margin-top:7vh"><button class="chip on" data-f="All">All</button><button class="chip" data-f="Sculpture">Sculpture</button><button class="chip" data-f="Light">Light</button><button class="chip" data-f="Painting">Painting</button><button class="chip" data-f="Digital">Digital</button></div></section>
+<section class="sec" style="padding-top:2vh"><div class="cgrid" id="grid"></div></section>
+<div class="modal" inert role="dialog" aria-modal="true" aria-label="Artwork details"><div class="m-art"></div><div class="m-info"><button class="mclose" aria-label="Close"><i data-lucide="x"></i></button><p class="kick" id="m-cat"></p><h2 class="h2" id="m-title"></h2><p class="lead" id="m-desc"></p>
+<dl class="meta"><div><dt>Year</dt><dd id="m-year"></dd></div><div><dt>Medium</dt><dd id="m-med"></dd></div><div><dt>Dimensions</dt><dd id="m-dim"></dd></div></dl>
+<div class="row"><button class="btn" data-m="-1"><i data-lucide="arrow-left"></i> Previous</button><button class="btn solid" data-m="1">Next <i data-lucide="arrow-right"></i></button></div></div></div></main>
+<footer><p class="kick" style="color:#f0a672">The art of time</p><a href="contact.html" class="h2" data-cursor="Write">Come and lose<br>an hour with us.</a><div class="fw" aria-hidden="true">Chronos</div>
+<div class="fcols"><div><h4>Visit</h4><p>Via del Tempo 1, Milan</p><p>Open daily, 10:00 to 22:00</p></div><div><h4>Explore</h4><a href="index.html">Home</a><a href="collection.html">The Collection</a><a href="dimensions.html">The Dimensions</a><a href="archive.html">The Archive</a><a href="experience.html">The Experience</a><a href="contact.html">Contact</a></div><div><h4>Follow</h4><a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a><a href="https://vimeo.com/" target="_blank" rel="noopener">Vimeo</a><a href="https://www.are.na/" target="_blank" rel="noopener">Are.na</a><a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a></div><div><h4>Write</h4><a href="mailto:hello@chronos.museum">hello@chronos.museum</a></div></div>
+<small>© 2026 Chronos Museum of Digital Art. Time is not what you think.</small></footer>
+<script src="https://unpkg.com/lucide@0.263.1/dist/umd/lucide.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/cursor.js"></script>
+<script src="js/animations.js"></script>
+<script src="js/gallery.js"></script>
+<script src="js/three-scene.js"></script>
+</body></html>
